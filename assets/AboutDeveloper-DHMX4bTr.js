@@ -1,0 +1,1 @@
+import{t as e}from"./index-CBGWJ1uZ.js";var t=e();function n(){return(0,t.jsx)(`main`,{className:`about-developer`,children:(0,t.jsx)(`h1`,{children:`About developer page`})})}export{n as default};

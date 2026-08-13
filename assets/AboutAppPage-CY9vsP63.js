@@ -1,0 +1,1 @@
+import{t as e}from"./index-CBGWJ1uZ.js";var t=e();function n(){return(0,t.jsx)(`main`,{className:`about-app`,children:(0,t.jsx)(`h1`,{children:`About app page`})})}export{n as default};
