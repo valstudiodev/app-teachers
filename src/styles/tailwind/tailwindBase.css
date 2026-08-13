@@ -1,0 +1,12 @@
+@theme {
+  --color-bg: #F6F7F9;
+  --color-card: #FFFFFF;
+  --color-primary: #252A30;
+  --color-secondary: #68717C;
+  --color-border: #E5E8EB;
+
+  --color-primary-blue: #4DA3D9;
+  --color-primary-green: #4CAF7D;
+  --color-gold: #D9A441;
+  --color-error-red: #E05252;
+}

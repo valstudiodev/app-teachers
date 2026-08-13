@@ -1,0 +1,38 @@
+@use "sass:math";
+@use '../../../styles/settings/settings' as *;
+@use '../../../styles/variables/variables' as *;
+@use '../../../styles/settings/media' as *;
+
+.button {
+  @include adaptiveValue('padding-block', 16, 10);
+  @include adaptiveValue('padding-inline', 30, 15);
+  color: $card;
+  border-radius: toRem(10);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &--primary {
+    background-color: $primary-green;
+
+    &:hover {
+      background-color: #135735;
+    }
+  }
+
+  &--secondary {
+    background-color: $primary-blue;
+
+    &:hover {
+      background-color: #20638d;
+    }
+  }
+
+  &--danger {
+    background-color: $error-red;
+
+    &:hover {
+      background-color: #b12828;
+    }
+  }
+}

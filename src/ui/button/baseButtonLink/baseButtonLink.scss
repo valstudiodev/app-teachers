@@ -1,0 +1,17 @@
+@use '../../../styles/settings/settings' as *;
+@use '../../../styles/variables/variables' as *;
+
+.button-base-link {
+  @include adaptiveValue('padding-block', 16, 10);
+  @include adaptiveValue('padding-inline', 30, 15);
+  color: $card;
+  border-radius: toRem(10);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: $primary-green;
+
+  &:hover {
+    background-color: #135735;
+  }
+}

@@ -1,0 +1,7 @@
+export { default as HomePage } from '@/pages/home/HomePage'
+export { default as MeetingsPage } from '@/pages/meetings/MeetingsPage'
+export { default as AboutAppPage } from '@/pages/about-app/AboutAppPage'
+export { default as AboutDeveloper } from '@/pages/about-developer/AboutDeveloper'
+export { default as TeachersPage } from '@/pages/teachers/TeachersPage'
+export { default as ErrorPage } from '@/pages/errorPage/ErrorPage'
+export { default as Page404 } from '@/pages/page404/Page404'

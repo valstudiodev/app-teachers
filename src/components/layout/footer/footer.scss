@@ -1,0 +1,12 @@
+@use '../../../styles/variables/variables' as *;
+@use '../../../styles/settings/settings' as *;
+
+.footer {
+  background-color: $secondary;
+  @include adaptiveValue('padding-block', 25, 15);
+  text-align: center;
+  @include adaptiveValue('font-size', 20, 16);
+  color: $card;
+
+  &__copyright {}
+}

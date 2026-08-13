@@ -1,0 +1,29 @@
+@use '../../../styles/settings/settings' as *;
+@use '../../../styles/variables/variables' as *;
+
+.header {
+  background-color: $primary-green;
+  color: $primary;
+  @include adaptiveValue('font-size', 20, 16);
+  @include adaptiveValue('padding-block', 25, 10);
+
+  &__menu {}
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include adaptiveValue('gap', 50, 15);
+  }
+
+  &__item {}
+
+  &__link {
+
+    &.is-active {
+      color: $gold;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export { default as MainDashboard } from '@/components/mainDashboard/MainDashboard'
