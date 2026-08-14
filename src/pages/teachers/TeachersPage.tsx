@@ -5,6 +5,8 @@ import { CustomButton } from "@/ui/button";
 
 
 function TeachersPage() {
+  console.log('-----Teachers page render-----');
+
   return (
     <main className="teachers-page py-10 mx-auto">
       <Container className="teachers-page__container">
@@ -12,6 +14,7 @@ function TeachersPage() {
         <div className="teachers-page__actions
         flex items-center gap-4">
           <CustomButton
+            className="bg-red"
             variant="primary"
           >
             Edit

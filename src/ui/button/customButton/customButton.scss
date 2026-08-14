@@ -1,7 +1,7 @@
 @use "sass:math";
 @use '../../../styles/settings/settings' as *;
 @use '../../../styles/variables/variables' as *;
-@use '../../../styles/settings/media' as *;
+@use '../../../styles/abstracts/input-mixins' as *;
 
 .button {
   @include adaptiveValue('padding-block', 16, 10);
@@ -15,15 +15,28 @@
   &--primary {
     background-color: $primary-green;
 
-    &:hover {
-      background-color: #135735;
+    @include mouse {
+      &:hover {
+        background-color: #135735;
+      }
+    }
+
+    @include touch {
+      background-color: red;
+    }
+
+    @include keyboard {
+      &:focus-visible {
+        outline: toRem(2) solid #68717C;
+        outline-offset: toRem(2);
+      }
     }
   }
 
   &--secondary {
     background-color: $primary-blue;
 
-    &:hover {
+    @include hover {
       background-color: #20638d;
     }
   }

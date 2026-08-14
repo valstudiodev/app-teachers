@@ -4,6 +4,8 @@ import { BaseButtonLink } from "@/ui/button";
 
 
 function AboutDeveloper(): React.JSX.Element {
+  console.log('-----About Developer page render-----');
+
   return (
     <main className="about-developer py-10">
       <Container

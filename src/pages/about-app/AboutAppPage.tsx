@@ -4,6 +4,8 @@ import { BaseButtonLink } from "@/ui/button";
 
 
 function AboutAppPage(): React.JSX.Element {
+  console.log('----About page render----');
+
   return (
     <main className="about-app py-10">
       <Container
