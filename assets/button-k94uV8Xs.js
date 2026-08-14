@@ -1,2 +1,0 @@
-import{n as e,t}from"./index-CBGWJ1uZ.js";var n=t();function r({variant:e=`primary`,children:t,className:r=``,title:i,...a}){return(0,n.jsx)(`button`,{className:`button button--${e}`,...a,children:t})}function i({to:t,leftIcon:r,rightIcon:i,children:a,className:o=``,...s}){return(0,n.jsxs)(e,{to:t,className:`button-base-link inline-flex
-        items-center ${o}`,...s,children:[r&&(0,n.jsx)(r,{size:20}),a,i&&(0,n.jsx)(i,{size:20})]})}export{r as n,i as t};
