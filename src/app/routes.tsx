@@ -1,6 +1,14 @@
 import { AppRoute } from "@/app/routesTypes";
 import { MainLayout } from "@/components/layout";
-import { AboutAppPage, AboutDeveloper, ErrorPage, HomePage, MeetingsPage, TeachersPage } from "@/pages";
+import {
+  LazyHomePage,
+  LazyMeetingsPage,
+  LazyAboutApp,
+  LazyAboutDeveloper,
+  LazyPage404,
+  LazyErrorPage,
+  LazyTeachersPage
+} from "@/app/lazy-pages";
 import { Suspense } from "react";
 import { createBrowserRouter } from "react-router";
 
@@ -8,14 +16,14 @@ export const routes: AppRoute[] = [
   {
     path: '/',
     Component: MainLayout,
-    errorElement: <ErrorPage />,
+    errorElement: <LazyErrorPage />,
     children: [
       {
         index: true,
         id: 'home',
         element: (
           <Suspense>
-            <HomePage />
+            <LazyHomePage />
           </Suspense>
         ),
         handle: {
@@ -30,7 +38,7 @@ export const routes: AppRoute[] = [
         id: 'teachers',
         element: (
           <Suspense>
-            <TeachersPage />
+            <LazyTeachersPage />
           </Suspense>
         ),
         handle: {
@@ -45,7 +53,7 @@ export const routes: AppRoute[] = [
         id: 'meetings',
         element: (
           <Suspense>
-            <MeetingsPage />
+            <LazyMeetingsPage />
           </Suspense>
         ),
         handle: {
@@ -60,7 +68,7 @@ export const routes: AppRoute[] = [
         id: 'about-app',
         element: (
           <Suspense>
-            <AboutAppPage />
+            <LazyAboutApp />
           </Suspense>
         ),
         handle: {
@@ -75,7 +83,7 @@ export const routes: AppRoute[] = [
         id: 'about-developer',
         element: (
           <Suspense>
-            <AboutDeveloper />
+            <LazyAboutDeveloper />
           </Suspense>
         ),
         handle: {
@@ -84,6 +92,15 @@ export const routes: AppRoute[] = [
           menuId: 'about-developer',
           breadcrumbs: true,
         }
+      },
+      {
+        path: '*',
+        id: 'page-404',
+        element: (
+          <Suspense>
+            <LazyPage404 />
+          </Suspense>
+        ),
       }
     ]
   }

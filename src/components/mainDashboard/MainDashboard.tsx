@@ -1,4 +1,4 @@
-import { BaseButtonLink, CustomButton } from '@/ui/button';
+import { BaseButtonLink } from '@/ui/button';
 import HeadingTitle from '../typography/headingTitle/HeadingTitle';
 import './mainDashboard.scss'
 
@@ -11,30 +11,17 @@ function mainDashboard({ className }: { className: string }): React.JSX.Element 
         call them on the meetings and knows the Developer.
       </p>
       <div className={`${className}__actions`}>
-        {/* <CustomButton
-          title='Look Teachers'
-          variant='primary'
-          type='button'
-        >
-          Look Teachers
-        </CustomButton> */}
-
         <BaseButtonLink
           to='/teachers'
         >
           Look Teachers
         </BaseButtonLink>
 
-
-        <CustomButton
-          title='Look Teachers'
-          variant='primary'
-          type='button'
+        <BaseButtonLink
+          to='/meetings'
         >
-          Look meeting's list
-        </CustomButton>
-
-
+          Look meeetings list
+        </BaseButtonLink>
       </div>
     </div>
   );

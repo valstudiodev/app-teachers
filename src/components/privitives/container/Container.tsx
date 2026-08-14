@@ -12,7 +12,7 @@ export default function Container({
 }: ContainerProps): React.JSX.Element {
   return (
     <div
-      className={`container, ${className}`}
+      className={`container ${className}`}
       style={{
         maxWidth: fluid ? '100%'
           : typeof maxWidth === 'number'

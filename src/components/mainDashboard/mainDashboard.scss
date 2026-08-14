@@ -9,8 +9,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include adaptiveValue('gap', 30, 15);
-  min-height: toRem(500);
+  @include adaptiveValue('gap', 60, 15);
+  text-align: center;
 
   &__text {
     flex-grow: 1;
@@ -23,5 +23,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: toRem(20);
+
+    @media (max-width: toEm(390)) {
+      flex-grow: 1;
+    }
   }
 }

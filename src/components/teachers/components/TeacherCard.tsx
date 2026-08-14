@@ -27,7 +27,7 @@ function TeacherCard({ cardData }: TeacherCardProps): React.JSX.Element {
         <CustomButton
           className="teacher-card__btn"
           variant="primary">
-          Choosen
+          Choose
         </CustomButton>
       </div>
     </article>
