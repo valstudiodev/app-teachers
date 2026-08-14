@@ -1,0 +1,3 @@
+import{t as e}from"./index-Dlqobwnh.js";import{i as t,r as n,t as r}from"./button-C9tqZKaU.js";var i=e();function a(){return console.log(`----About page render----`),(0,i.jsx)(`main`,{className:`about-app py-10`,children:(0,i.jsxs)(t,{className:`bg-bg px-4 py-5\r
+        h-full flex flex-col gap-10 items-center\r
+        border border-border rounded-2xl`,children:[(0,i.jsx)(n,{className:`text-center`,title:`About app "Teachers"`}),(0,i.jsx)(r,{to:`/`,children:`Home`})]})})}export{a as default};
