@@ -1,0 +1,3 @@
+import{t as e}from"./index-BwHXzo5o.js";import{i as t,r as n,t as r}from"./button-X-R6Qv80.js";var i=e();function a(){return console.log(`-----About Developer page render-----`),(0,i.jsx)(`main`,{className:`about-developer py-10`,children:(0,i.jsx)(t,{className:`about-developer__container`,children:(0,i.jsxs)(`div`,{className:`bg-bg \r
+        h-full flex flex-col gap-10 items-center\r
+        border border-border rounded-2xl p-5`,children:[(0,i.jsx)(n,{title:`About Developer`}),(0,i.jsx)(r,{to:`/`,children:`Home`})]})})})}export{a as default};

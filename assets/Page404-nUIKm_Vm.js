@@ -1,1 +1,0 @@
-import{t as e}from"./index-Dlqobwnh.js";var t=e();function n(){return(0,t.jsx)(`section`,{className:`page-404`,children:(0,t.jsx)(`h2`,{children:`Page 404`})})}export{n as default};
