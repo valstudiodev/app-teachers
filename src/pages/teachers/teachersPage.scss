@@ -1,0 +1,17 @@
+.teachers-page {
+
+  &__container {}
+
+  &__actions {
+    display: flex;
+
+    @media (max-width: toEm(1300)) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__btn {
+    // width: 100%;
+
+  }
+}

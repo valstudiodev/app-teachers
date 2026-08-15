@@ -12,10 +12,10 @@ export default function ButtonLinkBase({
 }: ButtonLinkProps): React.JSX.Element {
   return (
     <Link
+      {...props}
       to={to}
       className={`button-base-link inline-flex
         items-center ${className}`}
-      {...props}
     >
       {LeftIcon && <LeftIcon size={20} />}
 

@@ -10,7 +10,8 @@ function CustomButton({
 }: ButtonCustomProps) {
   return (
     <button
-      className={`button button--${variant}`}
+      className={`button button--${variant} ${className}`}
+      title={title}
       {...restProps}
     >
       {children}

@@ -4,7 +4,7 @@ import "../styles/teacherCard.scss";
 
 function TeacherCard({ cardData }: TeacherCardProps): React.JSX.Element {
   return (
-    <article className="teacher-card">
+    <article className="teacher-card mb-5">
       <div className="teacher-card__image--wrap">
         <img
           className="teacher-card__img"

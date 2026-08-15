@@ -3,7 +3,7 @@
 
 .header {
   background-color: $primary-green;
-  color: $primary;
+  color: $card;
   @include adaptiveValue('font-size', 20, 16);
   @include adaptiveValue('padding-block', 25, 10);
 

@@ -2,6 +2,7 @@ import Container from "@/components/privitives/container/Container";
 import TeachersList from "@/components/teachers/components/TeacherList";
 import HeadingTitle from "@/components/typography/headingTitle/HeadingTitle";
 import { CustomButton } from "@/ui/button";
+import './teachersPage.scss'
 
 
 function TeachersPage() {
@@ -10,16 +11,19 @@ function TeachersPage() {
   return (
     <main className="teachers-page py-10 mx-auto">
       <Container className="teachers-page__container">
-        <HeadingTitle title="List of the Teachers" />
+        <HeadingTitle
+          className="mb-5"
+          title="List of the Teachers" />
         <div className="teachers-page__actions
-        flex items-center gap-4">
+        flex items-center gap-4 mb-5 justify-center">
           <CustomButton
-            className="bg-red"
+            className="w-full"
             variant="primary"
           >
-            Edit
+            Add a new teacher
           </CustomButton>
           <CustomButton
+            className="w-full"
             variant="secondary"
           >
             Call teachers at the meeting

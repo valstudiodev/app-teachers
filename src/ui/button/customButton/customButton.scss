@@ -11,6 +11,11 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s;
+  // width: 100%;
+
+  &--width {
+    width: 100%;
+  }
 
   &--primary {
     background-color: $primary-green;
