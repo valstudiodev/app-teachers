@@ -11,6 +11,8 @@ import {
 } from "@/app/lazy-pages";
 import { Suspense } from "react";
 import { createBrowserRouter } from "react-router";
+import TeacherForm from "@/components/teachers/components/TeacherForm";
+import TeachersList from "@/components/teachers/components/TeacherList";
 
 export const routes: AppRoute[] = [
   {
@@ -46,7 +48,24 @@ export const routes: AppRoute[] = [
           title: 'Teachers',
           menuId: 'teachers',
           breadcrumbs: true,
-        }
+        },
+        children: [
+          {
+            index: true,
+            id: 'teacher-list',
+            element: <TeachersList />
+          },
+          {
+            path: 'new',
+            id: 'teacher-create',
+            element: <TeacherForm mode="create" />
+          },
+          {
+            path: ':id/edit',
+            id: 'teacher-edit',
+            element: <TeacherForm mode="edit" />
+          },
+        ],
       },
       {
         path: 'meetings',

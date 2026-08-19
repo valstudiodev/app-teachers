@@ -5,9 +5,9 @@
   &__actions {
     display: flex;
 
-    @media (max-width: toEm(1300)) {
-      flex-wrap: wrap;
-    }
+    // @media (max-width: toEm(1300)) {
+    //   flex-wrap: wrap;
+    // }
   }
 
   &__btn {
