@@ -1,1 +1,0 @@
-import{t as e}from"./index-BwHXzo5o.js";var t=e();function n(){return(0,t.jsx)(`section`,{className:`error-page`,children:(0,t.jsx)(`h2`,{children:`Error page`})})}export{n as default};

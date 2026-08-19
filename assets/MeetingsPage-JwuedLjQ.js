@@ -1,0 +1,4 @@
+import{c as e,i as t,n,t as r}from"./index-DTNzbVoI.js";import{n as i,t as a}from"./HeadingTitle-BiKhX-rK.js";var o=t();function s(){console.log(`-----Meetings page render-----`);let{teachers:t,selectedTeachersById:s}=e(),c=t.filter(e=>s.includes(e.id));return(0,o.jsx)(`main`,{className:`meetings-page py-10`,children:(0,o.jsx)(i,{className:`meetings-page__container`,children:(0,o.jsxs)(`div`,{className:`meetings-page__inner \r
+        bg-bg border-border rounded-2xl p-5`,children:[(0,o.jsx)(a,{className:`text-center mb-10`,title:`Meeting Participants`}),c.length===0?(0,o.jsx)(`p`,{className:`text-4xl\r
+            text-center text-secondary`,children:`No teachers selected`}):(0,o.jsx)(`ul`,{className:`flex flex-col\r
+           `,children:c.map(e=>(0,o.jsx)(`li`,{className:`w-full`,children:(0,o.jsx)(r,{cardData:e,showChooseButton:!1})},e.id))}),(0,o.jsx)(n,{to:`/teachers`,children:`Back to teachers list`})]})})})}export{s as default};

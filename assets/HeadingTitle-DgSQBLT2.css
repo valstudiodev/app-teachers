@@ -1,0 +1,1 @@
+@media (width>=89.375em){.heading-title{font-size:70px}}@media (width>=20em) and (width<=89.375em){.heading-title{font-size:clamp(24px , 10.7387px + 4.14414vw , 70px)}}@media (width<=20em){.heading-title{font-size:24px}}

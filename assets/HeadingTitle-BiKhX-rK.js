@@ -1,0 +1,2 @@
+import{i as e}from"./index-DTNzbVoI.js";var t=e();function n({maxWidth:e=1280,fluid:n,className:r,children:i,...a}){return(0,t.jsx)(`div`,{className:`container ${r}`,style:{maxWidth:n?`100%`:typeof e==`number`?`${e}px`:e,...a},children:i})}function r({title:e,className:n}){return(0,t.jsx)(`h1`,{className:`heading-title text-6xl
+    text-primary-green font-semibold ${n}`,children:e})}export{n,r as t};
