@@ -1,15 +1,10 @@
-import { Teacher, TeachersListProps } from "@/components/teachers/types";
-import { useFetch } from "@/hooks/useFetch";
-import { API_ROUTES } from "@/data/dataTeachers";
 import TeacherCard from "./TeacherCard";
 import { CustomButton } from "@/ui/button";
-import { useState, useEffect } from "react";
 import { Link, useOutletContext } from "react-router";
-import { MainLayoutOutletContext, TeachersOutletContext } from "@/components/teachers/types/teachersTypes";
+import { MainLayoutOutletContext } from "@/components/teachers/types/teachersTypes";
 
 
 function TeachersList(): React.JSX.Element {
-
 
   const {
     teachers,
